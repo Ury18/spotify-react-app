@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa')
+
+html
+    background-color: #262525
+    color: white
+    font-family: 'Comfortaa', cursive
+
+button
+    border-radius: 0.5rem
+    border-color: #00ED65
+    border-width: 0.035rem
+    background-color: black
+    padding: .5rem
+    color: white
+
+
+body
+    margin: 0
+
+.app
+    display: flex   
+    flex-flow: column wrap
+    justify-content: center
+    align-content: center
+
+
+.header
+    position: fixed
+    top: 0
+    height: 10%
+    width: 100%
+    display: flex
+    justify-content: center
+    color: #00ED65
+    background-color: black
+
+
+.login 
+    display: flex
+    flex-flow: column wrap
+    position: relative
+    margin-top: 15%
+    width: 100%
+    align-items: center 
+    &-form
+        display: flex
+        flex-flow: column wrap
+        margin-bottom: 2%
+        width:50%
+        align-items: center 
+
+        &__input
+            margin-bottom: 5%
+            width: 50%
+        &__button
+            align-self: center
+            width: 10%    
+
+    &__register-button
+        width: 5.3%
+
+.register 
+    display: flex
+    flex-flow: column wrap
+    position: relative
+    margin-top: 10%
+    width: 100%
+    align-items: center 
+    &-form
+        display: flex
+        flex-flow: column wrap
+        margin-bottom: 2%
+        width:50%
+        align-items: center 
+
+        &__input
+            margin-bottom: 5%
+            width: 50%
+        &__button
+            align-self: center
+            width: 10%    
+
+    &__login-button
+        width: 5.3%
+
+.search
+    margin-top: 0
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    width: 100%
+    position: fixed
+    top:10%
+    background-color: #262525
+    border-bottom: 5px solid black
+    &__button-logout
+        align-self: flex-end
+        margin-right: 25%
+        margin-top: 1%
+    &__title
+        margin:0
+    &-form
+        display: flex
+        flex-flow: column nowrap
+        margin-bottom: 0%
+        width:100%
+        align-items: center 
+        justify-content: center
+        &__input
+            margin-bottom: 1%
+            width: 50%
+        &-buttons
+            justify-self: center
+            align-self: center
+            display: flex
+            flex-flow: row nowrap
+            width: 100%
+            justify-content: center
+            align-content: center
+            &__button
+                margin: 1%
+                width: 15%
+                align-self: center
+                justify-self: center
+                
+.artists
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    margin-top: 17%
+    width: 100%
+    &__title
+        margin-bottom: 1%
+    &-items
+       
+        display: flex
+        flex-flow: row wrap
+        align-items: center 
+        align-content: center
+        justify-content: center
+        justify-items: center
+        width: 100%
+        &-item
+            box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) 
+            border: solid 0.2rem green
+            border-radius: 10%
+            display: flex
+            flex-flow: column wrap
+            align-items: center 
+            align-content: center
+            justify-content: center
+            justify-items: center
+            width:20%
+            margin: 1%
+            &__image
+                
+                border-radius: 10%
+                width: 100%
+.albums
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    margin-top: 17%
+    width: 100%
+    &__title
+        margin-bottom: 1%
+    &__button
+        align-self: flex-end
+        margin-right: 25%
+        justify-self: flex-end
+    &-items
+       
+        display: flex
+        flex-flow: row wrap
+        align-items: center 
+        align-content: center
+        justify-content: center
+        justify-items: center
+        width: 100%
+        &-item
+            box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) 
+            border: solid 0.2rem green
+            border-radius: 10%
+            display: flex
+            flex-flow: column wrap
+            align-items: center 
+            align-content: center
+            justify-content: center
+            justify-items: center
+            width:20%
+            margin: 1%
+            &__image
+                
+                border-radius: 10%
+                width: 100%
+
+
+.tracklist
+    margin: 0
+    margin-top:17%
+    margin-bottom:10%
+    width: 100%
+    align-self: center
+    display: flex
+    flex-flow: column wrap
+    align-items: center
+    justify-items: center
+    align-content: center
+    justify-content: center
+    &-title
+        margin-bottom: 3%
+    &-button
+        align-self: flex-end
+        margin-right: 25%
+        justify-self: flex-end
+    &-tracklist
+        width: 100%
+        &-item
+            display: flex
+            flex-flow: column wrap
+            align-items: center
+            box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) 
+            border: solid 0.1rem green
+            border-left-width: 0px
+            border-right-width: 0px
+            width:  100%
+            align-items: center
+            justify-items: center
+            align-content: center
+            justify-content: center
+            &__item
+                align-items: center
+                justify-self: center
+        
+
+
+.playingTrack
+    align-items: center
+    justify-self: center
+    display: flex
+    flex-flow: column wrap
+    position: fixed
+    bottom: 0
+    width: 100%
+    align-items: center
+    justify-items: center
+    justify-content: center
+    align-content: center
+    border-top: 5px solid black
+    background-color: black
+.feedback 
+    margin-top: 2% 
+    border: 1px solid
+    border-radius: 1em
+    padding: 1em
+    background-color: grey
+
+    &--warn 
+        color: yellow
+
+
+    &--error 
+        color: tomato
+
+    
